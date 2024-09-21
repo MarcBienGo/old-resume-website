@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Marc Bien Go - About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This web page shows personal information of Marc Bien Go. It includes skills acquired over the years along with a brief personal history.">
+        <meta name="keywords" content="CPSC 1030, Langara, Resume, HTML, CSS, JavaScript, JS, Marc Bien Go, About, Web Developer, Developer, Web, Computer">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <script src="scripts/progress.js" defer></script>
+    </head>
+    <body onload="setUp()">
+        <!-- Header -->
+        <header>
+            <img id="header-banner" src="images/header-banner.gif" alt="Website banner">
+        </header>
+        <div class="row">
+            <!-- Navigation Column -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="current-link">About</a></li>
+                    <li><a href="educ.html">Education</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h1>About Me</h1>
+                <div class="top-column">
+                    <form action="#">
+                        <fieldset>
+                            <legend>Hi there!</legend>
+                            <p>
+                                My name is Marc and I am studying in Langara College as an international student from the Philippines. I am a former web developer with aspirations of becoming
+                                a cyber security specialist. The lack of opportunities back home had me setting my sights out here in the west. I'm in Canada with the hopes of reigniting passions
+                                I have once lost, pursuing my most grand career adventure yet and providing a comfortable life for my family.
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="main-column">
+                    <form action="#">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label for="fname">First Name: <input type="text" name="fname" id="fname" value="Marc Bien" disabled></label><br>
+                            <label for="mname">Middle Name: <input type="text" name="mname" id="mname" value="Rojo" disabled></label><br>
+                            <label for="lname">Last Name: <input type="text" name="lname" id="lname" value="Go" disabled></label><br>
+                            <label for="birthdate">Birth Date: <input type="date" name="birthdate" id="birthdate" value="1993-07-03" disabled></label><br>
+                            <label for="nationality">Nationality: <input type="text" name="nationality" id="nationality" value="Filipino" disabled></label><br>
+                            <label for="location">Location: <input type="text" name="location" id="location" value="Vancouver, BC, V5X 3T1" disabled></label><br>
+                        </fieldset>
+                    </form>
+                    <form action="#">
+                        <fieldset>
+                            <legend>Skills</legend>
+                            <ul>
+                                <li>Amazon QuickSight <progress id="prog-qs" max="10" value="8"></progress></li>
+                                <li>HTML <progress id="prog-html" max="10" value="9"></progress></li>
+                                <li>MySQL <progress id="prog-mysql" max="10" value="7"></progress></li>
+                                <li>PHP <progress id="prog-php" max="10" value="8"></progress></li>
+                                <li>JavaScript <progress id="prog-js" max="10" value="9"></progress></li>
+                                <li>MVC Architecture <progress id="prog-mvc" max="10" value="7"></progress></li>
+                                <li>Project Management <progress id="prog-pm" max="10" value="8"></progress></li>
+                                <li>Team Management <progress id="prog-tm" max="10" value="8"></progress></li>
+                                <li>Technical Writing <progress id="prog-tw" max="10" value="8"></progress></li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="footer-column">
+                <h4>&copy;2024 Marc Bien Go. All rights reserved.</h4>
+            </div>
+            <div id="socmed">
+                <a href="https://www.linkedin.com/in/marcbiengo/" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/MarcBienGo" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/marcbiengo/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="https://www.reddit.com/user/KingDreamweaver/" target="_blank"><img src="images/reddit-icon.png" alt="Reddit"></a>
+            </div>
+        </footer>
+    </body>
+</html>

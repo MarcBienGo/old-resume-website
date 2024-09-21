@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2,h3,h5,p {
+    margin: 15px 0;
+}
+
+/* Header/logo Title */
+header {
+   background-color: #191C40;
+   color: white;
+   padding: 0;
+   text-align: center;
+}
+
+#header-banner {
+    width: 50%;
+    height: 161px;
+}
+
+/* Style the top navigation bar */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav ul li {
+    flex: 20%;
+}
+
+/* Style the navigation bar links */
+nav a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #b29758;
+    padding: 20px; 
+    display: block;
+}
+
+/* Change color on hover */
+nav a:hover {
+    background-color: #999;
+    color: #000000;
+}
+
+nav a.current-link {
+    background-color: #555;
+    color: #000000;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+nav {
+    flex: 15%;
+    background-color: #333;
+}
+
+h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #b29758;
+    font-size: 2em;
+    transition: transform 2s;
+}
+
+h1:hover {
+    transform: scale(1.1) translate(50px, -20px);
+}
+
+/* Main column */
+main {
+    background-color: white;
+    padding: 20px;
+    flex: 85%;
+}
+
+.alt-main {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+.splash-column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.splash-column img {
+    border-radius: 300px;
+    width: 75%;
+    max-width: 75%;
+}
+
+.main-column {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-column form {
+    margin: 10px;
+    flex: 50%;
+}
+
+.main-column form textarea{
+    margin-left: 10px;
+    flex: 50%;
+}
+
+.main-column form ul {
+    margin-left: 15px;
+}
+
+.main-column input[type=text], .main-column input[type=email], .main-column input[type=date] {
+    padding: 3px;
+    width: 31ch;
+}
+
+.main-column textarea {
+    padding: 3px;
+}
+
+.main-column input[type=submit] {
+    width: auto;
+}
+
+.main-column input:disabled {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.main-column .inner-ul {
+    margin-left: 25px;
+    font-size: 0.8em;
+}
+
+.two-row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+#submit-div {
+    margin: 10px;
+    text-align: center;
+}
+
+.bottom-column p mark, .top-column p mark {
+    background-color: #C3C0C0;
+    color: #404472;
+    border: 2px dashed #b29758;
+    font-weight: bolder;
+}
+
+.tooltip {
+    text-decoration: none;
+    position: relative;
+    color: #333;
+}
+   
+.tooltip span {
+    display: none;
+    border-radius: 6px;
+    color: black;
+    background: white; 
+}
+   
+.tooltip span img {
+    float: left;
+    height: 200px;
+    width: 300px;
+    margin: 0px 8px 8px 0;
+}
+   
+.tooltip:hover span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: auto;
+    max-width: 320px;
+    min-height: 128px;
+    border: 1px solid black;
+    margin-top: 12px;
+    margin-left: 32px;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.highlight {
+    transition: transform 2s;
+}
+
+.highlight:hover {
+    transform: scale(1.5);
+}
+
+.bottom-column form ul, .top-column form ul {
+    margin-left: 15px;
+}
+
+form fieldset {
+    border: 3px dashed;
+    background-color: #C3C0C0;
+    padding: 10px;
+}
+
+form input, form label {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+legend {
+    border: 3px dashed;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: bolder;
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #191C40;
+    color: white;
+    padding: 12px;
+}
+
+#footer-column {
+    flex: 30%;
+    display: inline;
+}
+
+#socmed {
+    flex: 70%;
+    align-items: flex-end;
+    text-align: right;
+    transition: transform 2s;
+}
+
+#socmed img {
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+}
+
+#socmed img:hover {
+    transform: rotate3d(1, 5, 1, 720deg) scale(1.5);
+}
+
+.pushable {
+    background: #404472;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    background: #191C40;
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
+/* Responsive layout - one-column layout */
+@media screen and (max-width: 1024px) {
+    nav ul, .row {
+         flex-direction: column;
+    }
+
+    .main-column {
+        flex-direction: column;
+    }
+
+    #header-banner {
+        display: none;
+    }
+ 
+    footer {
+        padding: 10px;
+    }
+
+    #foot-column {
+        flex: 50%;
+    }
+
+    .splash-column img {
+        width: 75%;
+    }
+
+    #socmed {
+        flex: 50%;
+    }
+ 
+    nav a {
+        border-bottom: 1px solid white;
+    }
+ }
+
+@media screen and (max-width: 600px) {
+    nav ul, .row {
+        flex-direction: column;
+    }
+
+    .main-column {
+        flex-direction: column;
+    }
+
+    #foot-column {
+        flex: 80%;
+    }
+
+    .splash-column img {
+        width: 100%;
+    }
+
+    #socmed {
+        flex: 20%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    nav a {
+        border-bottom: 1px solid white;
+    }
+}
